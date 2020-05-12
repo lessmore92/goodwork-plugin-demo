@@ -24,7 +24,7 @@ class MailPreviewServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../dist' => public_path('js/plugins/mail-preview'),
+            __DIR__.'/../dist'              => public_path('js/plugins/mail-preview'),
             __DIR__.'/views/plugin-scripts' => resource_path('views/plugin-scripts/'),
         ], 'goodwork-mail-preview');
         $this->loadRoutesFrom(__DIR__.'/routes.php');

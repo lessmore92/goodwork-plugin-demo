@@ -1,7 +1,7 @@
 <?php
 
-use Goodwork\MailPreview\MailPreviewController;
 use Illuminate\Support\Facades\Route;
+use Goodwork\MailPreview\MailPreviewController;
 
 Route::get('mails/list', [MailPreviewController::class, 'index']);
 

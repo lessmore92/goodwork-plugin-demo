@@ -1,7 +1,7 @@
 import MailPreview from './MailPreview.vue'
 
 var ComponentClass = Vue.extend(MailPreview)
-var component = window.comp = new ComponentClass().$mount()
+var component = new ComponentClass().$mount()
 
 const targetNode = document.getElementById('profile-dropdown-container');
 
